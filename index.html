@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Importe Font awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper grey lighten-4">
+            <div class="container">
+                <a href="#" class="brand-logo black-text" id="logo">David Graf</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons black-text">menu</i>
+                </a>
+                <!--Link for big screen as usual-->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#gallery" class="black-text">Gallery</a></li>
+                    <li><a href="#about" class="black-text">About</a></li>
+                    <li><a href="#contact" class="black-text">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Link for small screen with a sideNav-->
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#gallery" class="black-text">Gallery</a></li>
+        <li><a href="#about" class="black-text">About</a></li>
+        <li><a href="#contact" class="black-text">Contact</a></li>
+        <div class="container">
+            <p>© 2020 David Graf Gallery</p>
+        </div>
+    </ul>
+
+    <br>
+
+    <div>
+        <div class="center-align">
+            <img src="img/profil2.jpg" alt="" class="circle responsive-img hoverable">
+            <br>
+            <quote>"Great things never come from comfort zones"</quote>
+        </div>
+    </div>
+
+    <br>
+    <section id="gallery" class="section scrollspy">
+        <div class="container">
+            <div class="parallax-container">
+                <div class="overlay"><a href="mountain.html"><span id='mountain'><h2>MOUNTAIN</h2></span></a></div>
+                <div class="parallax"><img src="img/img1.png"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="parallax-container">
+                <div class="overlay"><a href="#"><span id='road'><h2>ROAD</h2></span></a></div>
+                <div class="parallax"><img src="img/img2.png"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="parallax-container">
+                <div class="overlay"><a href="#"><span id='lapland'><h2>LAPLAND</h2></span></a></div>
+                <div class="parallax">
+                    <img id="lapland" src="img/img44.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="grey lighten-4 section scrollspy" id="about">
+        <div class="container">
+
+            <div class="row ">
+                <div class="col s12 l12 center">
+                    <h3>About</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/img555.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s12 l8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores mollitia accusamus eum? Repudiandae optio autem explicabo praesentium porro obcaecati officia ea temporibus qui! Temporibus cum sapiente incidunt? Sed accusantium nulla atque nam sequi debitis vitae sapiente delectus perspiciatis, ipsum sint officia esse tempora, deserunt temporibus autem? Illo commodi asperiores quasi excepturi ut voluptatem. Molestias illum voluptatum officiis odit error! Minus voluptates aliquid architecto eligendi sit eum laborum amet saepe, sed quae qui autem dolor doloremque voluptate consectetur ipsam totam reiciendis. Reprehenderit tempora, eius accusamus dignissimos quo minima repellendus numquam, eum, voluptatem sit vel? Doloremque voluptatem fuga numquam quam hic nulla similique consectetur eius ut, porro possimus nobis beatae dicta eaque repellat obcaecati! Reprehenderit aliquam, voluptate animi quia earum repellat itaque! Quam earum ratione natus, ullam cum deserunt quaerat exercitationem totam voluptate perspiciatis! Libero tempora architecto voluptatum.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section  id="contact" class="section scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <h4>Contact</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga esse eum earum soluta omnis, quisquam voluptatem maiores ex eligendi quam, vero incidunt, nostrum dolor minus vel quasi tenetur possimus.</p>
+                </div>
+                <div class="col s12 l4 offset-l4 s12">
+                    <br>
+                    <form action="#" methode="post">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email" name="user_email">
+                            <label for="email">Your Email</labelfor>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea" name="user_message"></textarea>
+                            <label for="message">Your message...</label>
+                        </div>
+                        <div class="input-field center">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="grey lighten-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Footer Content</h5>
+                <p class="black-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores illum. Cupiditate exercitationem rerum cum. Vitae deleniti, tempore ea consequatur similique ab necessitatibus officia quidem iure ratione dignissimos sapiente repellat?</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Links</h5>
+                <ul>
+                  <li><a class="black-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!"><i class="fab fa-facebook"></i> Facebook</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!"><i class="fab fa-500px"></i> 500px</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <div class="footer-copyright">
+            <div class="container center">
+            © 2020 David Graf Gallery
+            </div>
+          </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/para.js"></script>
+  </body>
+</html>

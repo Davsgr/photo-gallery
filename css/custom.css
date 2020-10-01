@@ -1,0 +1,54 @@
+p, #logo{
+    font-family: 'Roboto', sans-serif;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+
+
+
+.overlay {
+    position: relative;
+    padding-top: 100px;
+    text-align:center;
+    height: 300px;
+  }
+
+.card{
+    width: 300px;
+}
+
+quote{
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h2 {
+      color: white;
+      font-weight: bold;
+      height: 150px;
+      width: auto;
+  }
+
+.overlay #lapland, #road, #mountain {
+        position: relative;
+        /*visibility: hidden;*/
+
+  }
+
+.overlay #lapland:hover ,#road:hover, #mountain:hover {
+        visibility: visible;
+        animation: mymove 0.5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate; 
+
+  }
+
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+  }
